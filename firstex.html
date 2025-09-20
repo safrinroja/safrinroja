@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step Progress Indicator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+      text-align: center;
+      background: linear-gradient(to left,rgb(239, 65, 65),rgb(231, 87, 231));
+
+    .step-indicator {
+      margin: 20px auto;
+      padding: 15px;
+    }
+
+    .step {
+      display: inline-block;
+      background-color: #ccc;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 50%;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .step.active {
+      background-color: #0077ff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Step Progress Indicator</h2>
+  <div class="step-indicator">
+    <span class="step active">1</span>
+    <span class="step">2</span>
+    <span class="step">3</span>
+  </div>
+
+</body>
+</html>
